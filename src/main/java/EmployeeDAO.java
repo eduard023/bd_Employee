@@ -3,13 +3,13 @@ import java.util.List;
 
 public interface EmployeeDAO {
     //создание сотрудника
-    void createEmployee(Employee employee, Connection connection);
+    void createEmployee(Employee employee);
     //поиск сотрудника по id
-    Employee searchById(int id, Connection connection);
+    Employee searchById(int id);
     //вывод всех сотрудников
-    List<Employee> readAll(Connection connection);
+    List<Employee> readAll();
     //изменение сотрудника
-    void updateById(int id, String firstName, String lastName, String gender, int age, int cityId, Connection connection);
+    void updateById(Employee employee);
     //удаление сотрудника
-    void deleteById(int id, Connection connection);
+    void deleteById(Employee employee);
 }

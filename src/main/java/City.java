@@ -1,7 +1,13 @@
+import javax.persistence.*;
 import java.util.Objects;
 
 public class City {
+
+    public City() {
+    }
+
      private int cityId;
+
     private String cityName;
 
     public City(int cityId) {
